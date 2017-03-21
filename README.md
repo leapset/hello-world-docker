@@ -1,15 +1,16 @@
 # hello-world-docker
 This is a demo application for basic docker.
 
-# Steps to run the docker file.
+## Steps to run the docker file.
 
-# Build a docker image using Dockerfile.
+Build a docker image using Dockerfile.
 sudo docker build -t trycake/hello-docker .
 
-# Verify local docker images.
+Verify local docker images.
 sudo docker images
 
-# Run trycake/hello-docker image. Port mapping is given.
+Run trycake/hello-docker image. Port mapping is given.
 sudo docker run -p 8080:3000 -d trycake/hello-docker
 
-# Access endpoint using browser. http://localhost:8080/api/hello-world
+Following curl command will return json response from the container.
+curl -X GET http://localhost:8080/api/hello-world
