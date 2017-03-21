@@ -4,13 +4,17 @@ This is a demo application for basic docker.
 ## Steps to run the docker file.
 
 Build a docker image using Dockerfile.
-sudo docker build -t trycake/hello-docker .
+
+    sudo docker build -t trycake/hello-docker .
 
 Verify local docker images.
-sudo docker images
+
+    sudo docker images
 
 Run trycake/hello-docker image. Port mapping is given.
-sudo docker run -p 8080:3000 -d trycake/hello-docker
+
+    sudo docker run -p 8080:3000 -d trycake/hello-docker
 
 Following curl command will return json response from the container.
-curl -X GET http://localhost:8080/api/hello-world
+
+    curl -X GET http://localhost:8080/api/hello-world
